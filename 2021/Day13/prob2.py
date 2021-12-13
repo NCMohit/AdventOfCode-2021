@@ -19,7 +19,7 @@ for line in file.readlines():
 for r in range(max_y+1):
     row = []
     for c in range(max_x+1):
-        row.append(".")
+        row.append(" ")
     matrix.append(row)
 
 for point in points:
@@ -54,7 +54,7 @@ def xfold(matrix,x):
             if(j=="#"):
                 count+=1
         tempmatrix.append(l[:x])
-    return matrix
+    return tempmatrix
 
 for fold in folds:
     if(fold[0]=="y"):
